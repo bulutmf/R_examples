@@ -13,11 +13,11 @@ data <- data.frame(height, weight)
 # Create linear regression model using "lm" function
 
 
-
 # Given the heights predict weights
 newHeights = c(140, 150, 180, 190)
 newData = data.frame(height=newHeights)
-# TODO predict weights
+# TODO predict weights => use "predict" function
+
 
 
 
