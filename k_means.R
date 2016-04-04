@@ -2,7 +2,7 @@
 # https://en.wikipedia.org/wiki/K-means_clustering
 
 
-findClusters <- function(Xcoord, Ycoord, K) {
+assignClusterToPoints <- function(Xcoord, Ycoord, K) {
   
   
 }
@@ -12,4 +12,10 @@ Ycoord <- c(2,4,5,9,6,5,7,9,7,5,6,1,1)
 
 K <- 3
 
-findClusters(Xcoord, Ycoord, K)
+clusters = rep(1, length(Xcoord))
+plot(Xcoord, Ycoord, col=clusters)
+clusters = assignClusterToPoints(Xcoord, Ycoord, K)
+
+# Plot the cluster
+#plot(Xcoord, Ycoord, col=clusters)
+
